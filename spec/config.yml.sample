@@ -1,0 +1,4 @@
+---
+host: "https://paxful.com/api"
+key: "your key"
+secret: "your secret"

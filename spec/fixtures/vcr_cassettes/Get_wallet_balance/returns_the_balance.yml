@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: "[host]/wallet/balance"
+    body:
+      encoding: UTF-8
+      string: apikey=[key]&nonce=1599851937&apiseal=b51fe46403aa2c163f83f8005f96018769163d090f1867c3f035095a4afb9f26
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Accept:
+      - application/json
+      Content-Type:
+      - text/plain
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Fri, 11 Sep 2020 19:18:58 GMT
+      Content-Type:
+      - application/json
+      Set-Cookie:
+      - __cf_bm=9772e00061c3f2ad44a39ec7b468ab09dd9f0025-1599851938-1800-AQxKSk7C4bLlGPLvsASjN637nptxzonTQGU1wP5+sZT6bG1D/Cm6pTyrKUWjVWjvORAVAM0dOxXwp0xUULIpvhQ=;
+        path=/; expires=Fri, 11-Sep-20 19:48:58 GMT; domain=.paxful.com; HttpOnly;
+        Secure; SameSite=None
+      - __cfduid=d5e782dd145a742150e4fd0d1623a5c3c1599851937; expires=Sun, 11-Oct-20
+        19:18:57 GMT; path=/; domain=.paxful.com; HttpOnly; SameSite=Lax
+      - __cflb=02DiuJc4sPDmgGhTNdPy7cZ2sNmKt1vEdSNNuu8dZZuik; SameSite=Lax; path=/;
+        expires=Sat, 12-Sep-20 18:18:58 GMT; HttpOnly
+      Cf-Ray:
+      - 5d13bcd3be8560f4-MNL
+      Cache-Control:
+      - no-cache, private
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '0520345855000060f46c0a5200000001'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Remaining:
+      - '804'
+      X-User-Id:
+      - '2919548'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"status":"success","timestamp":1599851938,"data":{"balance":153380,"incoming_amount":0,"balance_escrow":0}}'
+    http_version:
+  recorded_at: Fri, 11 Sep 2020 19:18:58 GMT
+recorded_with: VCR 3.0.3
