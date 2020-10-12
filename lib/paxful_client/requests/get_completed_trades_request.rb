@@ -1,10 +1,10 @@
 module PaxfulClient
-  class GetBalanceRequest < BaseRequest
+  class GetCompletedTradesRequest < BaseRequest
 
     private
 
     def path
-      "/wallet/balance"
+      "/trade/completed"
     end
 
     def headers

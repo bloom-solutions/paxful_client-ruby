@@ -4,6 +4,7 @@ module PaxfulClient
     include APIClientBase::Client.module(default_opts: :default_opts)
 
     api_action :get_balance
+    api_action :get_completed_trades
 
     attribute :host, String
     attribute :key, String
