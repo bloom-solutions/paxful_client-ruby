@@ -22,11 +22,16 @@ Or install it yourself as:
 
 ```ruby
 client = PaxfulClient.new(host: "host", key: "key", secret: "secret")
+
+# Get balance
 response = client.get_balance
 wallet = response.wallet
-
-# get the balance
 wallet.balance
+
+# Get completed trades
+response = client.get_completed_trades
+order_book = response.order_book
+order_book.trades
 ```
 
 ## Development
