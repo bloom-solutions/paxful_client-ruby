@@ -25,5 +25,7 @@ jobs:
         ruby-version: '2.7'
     - name: Install dependencies
       run: bundle install
+    - name: Copy config.yml
+      run: cp spec/config.yml{.sample,}
     - name: Run tests
       run: bundle exec rake
