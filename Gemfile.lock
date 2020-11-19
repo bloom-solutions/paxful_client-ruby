@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    paxful_client (0.3.0)
+    paxful_client (1.0.0)
       activesupport
       api_client_base
       dry-validation (~> 0.13)
@@ -97,7 +97,7 @@ GEM
     thread_safe (0.3.6)
     typhoeus (1.4.0)
       ethon (>= 0.9.0)
-    tzinfo (1.2.7)
+    tzinfo (1.2.8)
       thread_safe (~> 0.1)
     vcr (3.0.3)
     virtus (1.0.5)
@@ -109,7 +109,7 @@ GEM
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
       hashdiff
-    zeitwerk (2.4.0)
+    zeitwerk (2.4.1)
 
 PLATFORMS
   ruby
