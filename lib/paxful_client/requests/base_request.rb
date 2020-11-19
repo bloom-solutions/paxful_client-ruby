@@ -11,8 +11,8 @@ module PaxfulClient
     def body
       nonce = Time.now.to_i
       apiseal = OpenSSL::HMAC.hexdigest(
-        "SHA256", 
-        secret, 
+        "SHA256",
+        secret,
         "apikey=#{key}&nonce=#{nonce}",
       )
 
