@@ -5,6 +5,7 @@ module PaxfulClient
 
     attribute :key,    String
     attribute :secret, String
+    attribute :page, Integer, default: 1
 
     private
 
@@ -13,12 +14,13 @@ module PaxfulClient
       apiseal = OpenSSL::HMAC.hexdigest(
         "SHA256",
         secret,
-        "apikey=#{key}&nonce=#{nonce}",
+        "apikey=#{key}&nonce=#{nonce}&page=#{page}",
       )
 
       [
         "apikey=#{key}",
         "nonce=#{nonce}",
+        "page=#{page}",
         "apiseal=#{apiseal}",
       ].join("&")
     end
