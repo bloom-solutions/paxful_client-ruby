@@ -28,8 +28,13 @@ response = client.get_balance
 wallet = response.wallet
 wallet.balance
 
-# Get completed trades
+# Get completed trades (page = 1 by default)
 response = client.get_completed_trades
+
+# Get completed trades by page
+response = client.get_completed_trades(page: page)
+
+# Get response
 order_book = response.order_book
 order_book.trades
 ```
