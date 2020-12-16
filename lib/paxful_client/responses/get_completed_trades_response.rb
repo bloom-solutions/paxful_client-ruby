@@ -22,5 +22,15 @@ module PaxfulClient
       order_book
     end
 
+    def default_success
+      code == 200 && present_parsed_body?
+    end
+
+    def present_parsed_body?
+      !parsed_body.nil? &&
+        !parsed_body["data"].nil? &&
+        !parsed_body["data"]["trades"].nil?
+    end
+
   end
 end
