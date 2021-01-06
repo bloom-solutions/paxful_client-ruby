@@ -5,6 +5,7 @@ module PaxfulClient
 
     attribute :body, Object, lazy: true, default: :default_body
     attribute :parsed_body, String, lazy: true, default: :default_parsed_body
+    attribute :error_message, String, lazy: true
 
     private
 
