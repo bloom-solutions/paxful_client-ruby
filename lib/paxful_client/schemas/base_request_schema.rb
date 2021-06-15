@@ -1,8 +1,10 @@
 module PaxfulClient
-  BaseRequestSchema = Dry::Validation.Schema do
+  class BaseRequestSchema < Dry::Validation::Contract
 
-    required(:key).filled(:str?)
-    required(:secret).filled(:str?)
+    params do
+      required(:key).filled(:string)
+      required(:secret).filled(:string)
+    end
 
   end
 end

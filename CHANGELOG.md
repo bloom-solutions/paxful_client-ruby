@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+### Added
+- Update `dry-validation` to 1.x
+
 ## [1.3.0] - 2021-01-06
 ### Changed
 - `get_balance#success?` now checks if the response body has a `data` element. Sometimes Paxful returns 200, but has an empty body
