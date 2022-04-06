@@ -28,9 +28,10 @@ Gem::Specification.new do |spec|
   spec.add_dependency "api_client_base"
   spec.add_dependency "typhoeus"
   spec.add_dependency "activesupport"
-  spec.add_dependency "dry-validation", "~> 1.0", "< 2"
+  spec.add_dependency "dry-validation", ">= 0.13", "< 2"
 
   spec.add_development_dependency "pry"
   spec.add_development_dependency "vcr", "~> 3.0"
   spec.add_development_dependency "webmock", "~> 2.3"
+  spec.add_development_dependency "appraisal"
 end
