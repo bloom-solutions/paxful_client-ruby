@@ -9,9 +9,9 @@ GIT
       thor (>= 0.14.0)
 
 PATH
-  remote: .
+  remote: ..
   specs:
-    paxful_client (1.5.0)
+    paxful_client (1.4.0)
       activesupport
       api_client_base
       dry-validation (>= 0.13, < 2)
@@ -25,7 +25,7 @@ GEM
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
-    addressable (2.7.0)
+    addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
     api_client_base (1.11.0)
       activesupport (>= 3.0)
@@ -39,11 +39,11 @@ GEM
     coercible (1.0.0)
       descendants_tracker (~> 0.0.1)
     concurrent-ruby (1.1.10)
-    crack (0.4.3)
-      safe_yaml (~> 1.0.0)
+    crack (0.4.5)
+      rexml
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
-    diff-lcs (1.4.4)
+    diff-lcs (1.5.0)
     dry-configurable (0.14.0)
       concurrent-ruby (~> 1.0)
       dry-core (~> 0.6)
@@ -86,25 +86,25 @@ GEM
     ice_nine (0.11.2)
     method_source (1.0.0)
     minitest (5.15.0)
-    pry (0.13.1)
+    pry (0.14.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
     public_suffix (4.0.6)
     rake (12.3.3)
-    rspec (3.9.0)
-      rspec-core (~> 3.9.0)
-      rspec-expectations (~> 3.9.0)
-      rspec-mocks (~> 3.9.0)
-    rspec-core (3.9.2)
-      rspec-support (~> 3.9.3)
-    rspec-expectations (3.9.2)
+    rexml (3.2.5)
+    rspec (3.11.0)
+      rspec-core (~> 3.11.0)
+      rspec-expectations (~> 3.11.0)
+      rspec-mocks (~> 3.11.0)
+    rspec-core (3.11.0)
+      rspec-support (~> 3.11.0)
+    rspec-expectations (3.11.0)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.9.0)
-    rspec-mocks (3.9.1)
+      rspec-support (~> 3.11.0)
+    rspec-mocks (3.11.1)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.9.0)
-    rspec-support (3.9.3)
-    safe_yaml (1.0.5)
+      rspec-support (~> 3.11.0)
+    rspec-support (3.11.0)
     thor (1.2.1)
     thread_safe (0.3.6)
     typhoeus (1.4.0)
@@ -126,6 +126,7 @@ PLATFORMS
 
 DEPENDENCIES
   appraisal!
+  dry-validation (~> 1.0)
   paxful_client!
   pry
   rake (~> 12.0)
