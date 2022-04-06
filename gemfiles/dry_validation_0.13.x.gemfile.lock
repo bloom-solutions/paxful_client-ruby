@@ -11,7 +11,7 @@ GIT
 PATH
   remote: ..
   specs:
-    paxful_client (1.4.0)
+    paxful_client (1.5.0)
       activesupport
       api_client_base
       dry-validation (>= 0.13, < 2)
